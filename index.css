@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  /* Default fallbacks */
+  --primary: #3b82f6;
+  --bg-app: #ffffff;
+  --card-bg: #f3f4f6;
+  --text-main: #111827;
+  --radius: 8px;
+}
+
+body {
+  background-color: #1a1a1a !important; 
+  color: white !important;
+}
+
+/* Ensure all interactive elements respect the theme transition */
+div, button, section {
+  transition: background-color 0.5s ease, border-radius 0.3s ease, border-color 0.5s ease;
+}
